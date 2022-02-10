@@ -84,6 +84,7 @@ body {
   font-weight: 700;
   font-size: 1rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .result_area {
@@ -110,4 +111,21 @@ body {
 .result_area .result_wrapper h1 {
   color: var(--primary);
   font-size: 3rem;
+}
+.btn {
+  text-align: center;
+  margin-top: 6rem;
+}
+#btn {
+  padding: 0.7rem 0rem;
+  background-color: var(--primary);
+  width: 90%;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--veryDark);
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
 }
