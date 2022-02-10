@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --primary: rgb(38, 192, 171);
+  --veryDark: rgb(0, 73, 77);
+  --darkGrayish1: rgb(94, 122, 125);
+  --darkGrayish2: rgb(127, 156, 159);
+  --lightGrayish1: rgb(197, 228, 231);
+  --lightGrayish2: rgb(244, 250, 250);
+  --white: rgb(255, 255, 255);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--lightGrayish1);
+}
+
+.logo {
+  color: var(--darkGrayish1);
+  text-align: center;
+  padding: 3rem;
+  letter-spacing: 10px;
+  width: 50%;
+  margin: auto;
+}
+.wrapper {
+  width: 60rem;
+  height: 50vh;
+  margin: auto;
+  background-color: var(--lightGrayish2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.input_area {
+  width: 50%;
+  padding: 1rem;
+}
+.input_area input {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid var(--darkGrayish2);
+  padding: 0.5rem;
+  border-left: 1px solid var(--darkGrayish2);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.input_area input::placeholder {
+  font-size: 0.8rem;
+}
+.input_area input:focus {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid var(--darkGrayish2);
+  padding: 0.5rem;
+  border-left: 1px solid var(--darkGrayish2);
+  border-radius: 10px;
+}
+.input_area p {
+  color: var(--darkGrayish1);
+  font-weight: 700;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+.input_area .span_btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  margin-top: 1rem;
+}
+.input_area span {
+  background-color: var(--veryDark);
+  padding: 0.6rem 0rem;
+  text-align: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.result_area {
+  width: 50%;
+  padding: 2rem;
+  background-color: var(--veryDark);
+  margin: 2rem;
+  border-radius: 20px;
+}
+.result_area .result_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.result_area .result_wrapper .text p {
+  color: var(--white);
+}
+.result_area .result_wrapper .text span {
+  color: var(--darkGrayish1);
+}
+
+.result_area .result_wrapper h1 {
+  color: var(--primary);
+  font-size: 3rem;
+}
